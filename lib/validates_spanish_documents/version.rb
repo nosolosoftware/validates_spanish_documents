@@ -1,3 +1,3 @@
-module NssValidations
+module ValidatesSpanishDocuments
   VERSION = '1.0.0'
 end

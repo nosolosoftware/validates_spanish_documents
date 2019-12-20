@@ -4,7 +4,7 @@ require 'validates_spanish_documents'
 
 Gem::Specification.new do |spec|
   spec.name          = 'validates_spanish_documents'
-  spec.version       = NssValidations::VERSION
+  spec.version       = ValidatesSpanishDocuments::VERSION
   spec.authors       = ['Rafael Jurado']
   spec.email         = ['rjurado@nosolosoftware.es']
   spec.summary       = 'Common validations.'

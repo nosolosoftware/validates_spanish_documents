@@ -33,7 +33,7 @@ Or install it yourself as:
 ```ruby
 class Entity
   include Mongoid::Document
-  include NssValidations
+  include ValidatesSpanishDocuments
 
   field :dni
   field :nie
@@ -55,7 +55,7 @@ end
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/validates_spanish_documents/fork )
+1. Create a personal fork of the project
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
