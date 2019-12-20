@@ -1,0 +1,31 @@
+image: nosolosoftware/testing:16.04
+
+cache:
+  paths:
+    - vendor/bundle
+
+stages:
+  - testing
+  - audit
+
+cache:
+  paths:
+    - vendor/bundle
+
+rspec:
+  stage: testing
+  before_script:
+    - mongod --smallfiles --fork --syslog --quiet
+    - bundle install --without production tools --jobs $(nproc)
+  script:
+    - bundle exec rspec
+
+rubocop:
+  stage: audit
+  allow_failure: true
+  before_script:
+    - gem install rubocop --no-ri --no-rdoc
+  script:
+    - rubocop -D lib/ spec/
+
+

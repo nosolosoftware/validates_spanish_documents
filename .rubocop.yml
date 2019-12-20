@@ -1,0 +1,4 @@
+inherit_from: https://gitlab.nosolosoftware.es/styleguides/rubocop/raw/master/cops.yml
+
+Naming/FileName:
+  Enabled: false
